@@ -14,11 +14,17 @@ class CalculatorViewController: UIViewController {
     
     @IBOutlet weak var outputLabel: UILabel!
 
-
+	var brain: CalculatorBrain?
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+		brain = CalculatorBrain()
+
+		
+
+
 
 
     }
@@ -26,8 +32,9 @@ class CalculatorViewController: UIViewController {
     // MARK: - Action Handlers
     
     @IBAction func operandTapped(_ sender: UIButton) {
-
-
+		if let uwOperand = sender.titleLabel?.text {
+			
+		}
     }
 
 
